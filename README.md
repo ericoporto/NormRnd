@@ -4,6 +4,8 @@ An Adventure Game Studio module to generate standard normal random numbers
 
 NormRnd is a tiny (2.1kB) module adding a standard normal random number function. It uses Box-Muller method, which should be reasonably fast.
 
+[Download NormRnd.scm](https://github.com/ericoporto/NormRnd/raw/master/NormRnd.scm)
+
 # Functions exposed by the module
 
     float normrnd_unitary()

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang=en>
+<head>
+    <meta charset=utf-8>
+    <title>NormRnd - tiny module with standard normal random number function</title>
+    <link rel="stylesheet" type="text/css" href="web/simple.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>
+    <h1 id="normrnd">NormRnd</h1>
+    <p>An Adventure Game Studio module to generate standard normal random numbers</p>
+    </header>
+<p>NormRnd is a tiny (2.1kB) module adding a standard normal random number function. It uses Box-Muller method, which should be reasonably fast.</p>
+<h2 id="functions-exposed-by-the-module">Functions exposed by the module</h1>
+<pre><code>float normrnd_unitary()</code></pre>
+<p>Returns a standard normal random number, as a float, with median 0, and variance 1.</p>
+<pre><code>int normrnd_asint(int median, int sigma, int clamp_ceil,  int clamp_floor)</code></pre>
+<p>Returns a standard normal random number, as a int, requires passing a defined median and sigma. It also allow clamping to restrict the possible returning values. If clamp_ceil and clamp_floor are equal, clamping is disabled.</p>
+<h2 id="author">Author</h1>
+<p>I am &#201;rico Vieira Porto, my work was porting to AGS and giving utilitary functions, this code is based on Box-Muller method, implemented in C by <a href="http://www.mas.ncl.ac.uk/~ndjw1/teaching/sim/transf/norm.html">Prof Darren Wilkinson</a>.</p>
+  <footer>
+    <br>MIT License, copyright Érico Vieira Porto 2017</br>
+    <br> more info on the Github repository:
+    <a href="https://github.com/ericoporto/NormRnd"> github.com/ericoporto/NormRnd </a>
+  </footer>
+</body>

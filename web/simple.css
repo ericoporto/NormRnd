@@ -27,3 +27,27 @@ pre {
 code {
     background: #DDE;
 }
+
+.center {
+    margin: auto;
+    width: 50%;
+}
+
+.btn {
+  -webkit-border-radius: 7;
+  -moz-border-radius: 7;
+  border-radius: 7px;
+  font-family: Arial;
+  margin:0 auto;
+  text-align:center;
+  color: #ffffff;
+  font-size: 20px;
+  background: #3498db;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
